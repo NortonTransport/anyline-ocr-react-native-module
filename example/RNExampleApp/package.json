@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "anyline-ocr-react-native-module": "../../plugin",
-    "react": "^16.6.3",
-    "react-native": "^0.58.5"
+    "react": "16.8.5",
+    "react-native": "0.59.8"
   },
   "devDependencies": {
     "babel-core": "^7.0.0-bridge",
