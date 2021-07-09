@@ -78,7 +78,9 @@
         ((ALDocumentScanViewPlugin *)self.scanView.scanViewPlugin).documentScanPlugin.justDetectCornersIfPossible = NO;
         [((ALDocumentScanViewPlugin *)self.scanView.scanViewPlugin) setValue:self forKey:@"tmpOutlineDelegate"];
         
-        
+        [((ALDocumentScanViewPlugin *)self.scanView.scanViewPlugin).documentScanPlugin setDocumentRatios:@[@(0.7), @(0.45), @(0.25)]];
+        [((ALDocumentScanViewPlugin *)self.scanView.scanViewPlugin).documentScanPlugin setMaxDocumentRatioDeviation:@0.5];
+
         self.roundedView = [ALPluginHelper createRoundedViewForViewController:self];
         
         self.scanView.cameraConfig = [ALCameraConfig defaultCameraConfig];

@@ -126,6 +126,9 @@ public class Document4Activity extends AnylineBaseActivity implements CameraOpen
 
         btnCapture = findViewById(getResources().getIdentifier("capture", "id", getPackageName()));
 
+        ((DocumentScanViewPlugin) documentScanView.getScanViewPlugin()).setDocumentRatios(0.7, 0.45, 0.25);
+        ((DocumentScanViewPlugin) documentScanView.getScanViewPlugin()).setMaxDocumentRatioDeviation(0.5);
+
         // get Document specific Configs
         if (json.has("document")) {
             try {
